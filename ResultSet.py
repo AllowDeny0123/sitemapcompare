@@ -1,4 +1,3 @@
-import re
 from bs4 import element
 
 class ResultSet(element.ResultSet):
