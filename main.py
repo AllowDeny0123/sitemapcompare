@@ -3,7 +3,6 @@ from File import File
 from Compare import Compare
 
 if __name__ == "__main__":
-    print(sys.argv)
     if len(sys.argv) >= 3:
         a = Compare(f"{sys.argv[1]}", f"{sys.argv[2]}")
         _outputfilename = "output.output"
