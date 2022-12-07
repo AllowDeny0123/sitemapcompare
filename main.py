@@ -8,7 +8,7 @@ if __name__ == "__main__":
         a = Compare(f"{sys.argv[1]}", f"{sys.argv[2]}")
         _outputfilename = File("output.output").path
         if sys.argv[3]:
-            _outputfilename = sys.argv[3]
+            _outputfilename = File(sys.argv[3]).path
         with open(f"{_outputfilename}", "w") as file:
             _temp = a.CompareFiles()
             for i in _temp:
